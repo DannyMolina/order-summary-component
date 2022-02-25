@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/pattern-background-desktop.svg) ;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%) ; 
+    background-size: contain;   
+    flex-direction: column;
+    font-family: 'Red Hat Display', sans-serif;
+    position: relative;
+    
+}
+svg{
+    z-index: -1;
+}
+.attribution { font-size: 11px; text-align: center; margin-top: 30px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.container-card{
+    background-color: #ffffff; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    height: 620px; 
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.image-space img{
+    border-radius: 15px 15px 0px 0px;
+}
+
+.content-text-card{
+    height: 390px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-text-card p{
+    width: 300px;
+}
+
+
+h1{
+    margin: 15px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.paragraph-principal{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan{
+    width: 350px;
+    height: 90px;
+    display: flex;
+    background-color:hsl(225, 100%, 98%) ;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-around;
+    color:hsl(224, 23%, 55%);
+}
+
+.plan img{
+    margin-left: 20px;
+}
+
+.type-and-price-plan{
+    width: 150px;
+    margin-left: 18px;
+}
+
+.type-plan{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.change-button{
+    text-decoration: underline;
+    font-size: 15px;
+    color: hsl(245, 75%, 52%);
+    padding-left: 30px;
+    font-weight: 700;
+    transition: color 1s ease;
+}
+
+.change-button:hover{
+    cursor: pointer;
+    color: hsl(240, 100%, 70%);
+    text-decoration: none;
+    transition: color 1s ease;
+}
+
+button{
+    height: 50px;
+    width: 350px;
+    margin-top: 30px;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    border-radius:9px ;
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(0, 0%, 98%);
+    box-shadow: 0px 16px 40px -11px hsl(0, 0%, 38%);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsl(240, 100%, 70%);
+    transition: background-color 2s ease;
+}
+
+.content-text-card p:nth-child(5){
+    margin-top: 30px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    text-align: center;
+}
+
+.content-text-card p:nth-child(5):hover{
+    color: hsl(0, 0%, 0%);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:768px) and (min-width:425px){
+    .container-card{
+        width: 350px;
+        height: 520px;
+    
+    }
+
+    .image-space img{
+        width: 350px;
+    }
+    
+    h1{
+        font-size: 25px;
+    }
+    
+    .paragraph-principal{
+        font-size: 14px;
+    }
+
+    .plan{
+        width: 300px;
+    }
+
+    .plan img{
+        width: 50px;
+    }
+
+    .change-button{
+        padding-left: 0px;
+    }
+
+    button{
+        margin-top: 20px;
+        height: 40px;
+        width: 310px;
+    }
+
+    .content-text-card p:nth-child(5){
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:375px) and (min-width:320px){
+
+    
+    .container-card{
+        margin-top: 60px;
+        margin-left: 10px;
+        width: 350px;
+        height: 520px; 
+    }
+
+    .image-space img{
+        width: 350px;
+    }
+    
+    h1{
+        font-size: 25px;
+    }
+    
+    .paragraph-principal{
+        font-size: 14px;
+    }
+
+    .plan{
+        width: 300px;
+    }
+
+    .plan img{
+        width: 50px;
+    }
+
+    .change-button{
+        padding-left: 0px;
+    }
+
+    button{
+        margin-top: 20px;
+        height: 40px;
+        width: 310px;
+    }
+
+    .content-text-card p:nth-child(5){
+        margin-top: 20px;
+    }
+
+
+    
+}
+
+@media only screen and (max-width:320px){
+    .container-card{
+        margin-top: 60px;
+        margin-left: 55px;
+        width: 350px;
+        height: 520px; 
+    }
+
+    
+
+
+}
